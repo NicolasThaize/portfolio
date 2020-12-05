@@ -1,0 +1,222 @@
+.center, .center-column, .top, .right, .bottom, .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media (width: 1024px) {
+    .navShow {
+        display: flex
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainContent {
+    flex: 1;
+}
+
+.alignText {
+    text-align: center;
+}
+
+.marginBottomLess {
+    margin-bottom: 0!important;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #575757;
+}
+
+.bgFull {
+    background: black url('../img/background.jpg') center / cover;
+    /*background-color: #eeeeee;*/
+}
+
+.bgBlank {
+    background: black url("../img/bgBlank.jpg") center / cover;
+}
+
+.bgContact {
+    background: black url('../img/bgBlank.jpg') center / cover;
+}
+
+.borderNav {
+    border-bottom: rgb(38,38,38) solid 2px;
+}
+
+.navCustom {
+    width: 100%;
+    top: 104px;
+    position: absolute;
+    z-index: 10;
+}
+
+.noShadow {
+    box-shadow: none!important;
+}
+
+.borderBottom {
+    border-bottom: solid;
+}
+
+.marginTxt {
+    margin-bottom: 170px;
+}
+
+/* Animation soulignement header */
+
+.leftAnim:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.leftAnim:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.midAnim:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.midAnim:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.rightAnim:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.rightAnim:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* END Animation soulignement header */
+
+.animArrowRight {
+    position: relative;
+    animation: mymoveRight 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymoveRight {
+    0% {right: 0;}
+    50% {right: 70%;}
+    100% {right: 0;}
+}
+
+.animArrowLeft {
+    position: relative;
+    animation: mymoveLeft 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymoveLeft {
+    0% {left: 0;}
+    50% {left: 70%;}
+    100% {left: 0;}
+}
+
+.animMouse {
+    position: relative;
+    animation: mymoveUp 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes mymoveUp {
+    0% {bottom: 0;}
+    50% {bottom: 30%;}
+    100% {bottom: 0;}
+}
+
+.marginLinks{
+    margin: 5px 10px;
+}
+
+
+.terms{
+    padding-bottom: 50px;
+}
+.terms h2{
+    font-size: 2em;
+    line-height: 2.5em;
+}
+
+.terms h3{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.terms p{
+    margin-left: 1em;
+    text-align: justify;
+}
+
+
+.navbar-burger{
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+.marginTopUnderConstruct {
+    margin-top: 5rem;
+}

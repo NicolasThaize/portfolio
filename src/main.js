@@ -1,16 +1,23 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import Buefy from "buefy";
-import VueMeta from "vue-meta";
-import "./assets/scss/app.scss";
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import VueMeta from 'vue-meta';
 
-Vue.use(Buefy);
 Vue.use(VueMeta);
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
+
+// Requiring all css files to make them work properly
+require("./assets/main.scss");
+require("./assets/css/custom.css");
+
+// Requiring all javascript files to make burger and scroll work properly
+require("./assets/js/burger.js");
+require("./assets/js/scroll.js");
+
+
 
 new Vue({
   router,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app')

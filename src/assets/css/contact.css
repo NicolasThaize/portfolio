@@ -1,0 +1,29 @@
+input, textarea{
+    border-radius: 0!important;
+}
+
+input{
+    height: 3em!important;
+}
+
+.centerLetter{
+    height: 100%!important;
+}
+
+.styleButton{
+    background-color: black!important;
+    border-radius: 0!important;
+    color: white;
+    transition: 300ms;
+}
+
+.styleButton:hover{
+    transition: 300ms;
+    color: #262626;
+    background-color: white!important;
+}
+
+.marginContact{
+    margin-top: 20px;
+    margin-bottom: 20px!important;
+}

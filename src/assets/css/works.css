@@ -1,0 +1,103 @@
+/* Carte après hover works.html */
+
+.absolute{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cardTxtCustom{
+    background-color: #494949;
+    border-bottom-right-radius: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.cardTxtCustom i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* END Carte après hover works.html */
+
+/* Carte des travaux works.html */
+
+.cardBgCustom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* END Carte après hover works.html */
+
+/* Animation carte après hover works.html */
+
+.animCard{
+    z-index: 9;
+}
+
+.animCard::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 0 0 12px;
+    opacity: 0;
+    zoom: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.animCard:hover::before {
+    opacity: 1;
+}
+
+.animCard:hover .cardBgCustom {
+    transition: 500ms ease-in-out;
+    opacity: 0.3;
+}
+/* END Animation carte après hover works.html */
+
+/* Animation txt dans carte après hover  works .html */
+
+.txtSlide {
+    position: absolute;
+    height: 0;
+    transition: 500ms ease-in-out;
+    color: transparent;
+}
+
+.animCard:hover .cardTxtCustom {
+    transition: 500ms ease-in-out;
+    height: 100%;
+    color: white;
+}
+
+/* END Animation carte après hover  works .html */
+
+
+.marginRightWorks{
+    margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .marginRightWorks{
+        margin-right: 0px;
+    }
+  }
+
+.card{
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2)!important;
+    margin-bottom: 5px!important;
+}

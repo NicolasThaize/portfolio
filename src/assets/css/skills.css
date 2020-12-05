@@ -1,0 +1,18 @@
+.cornerRadius {
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 27px;
+}
+
+.resizeLogos {
+    width: 120px;
+    margin-bottom: 3px;
+}
+
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+
+.forceMB {
+    margin-bottom: 30px!important;
+}
