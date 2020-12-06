@@ -4,7 +4,7 @@
     <section class="bgBlank hero mainContent">
       <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
         <ul>
-          <li><a href="/">NicolasThaize</a></li>
+          <li><router-link to="/"><a>NicolasThaize</a></router-link></li>
           <li class="is-active"><a href="#" aria-current="page">Works</a></li>
         </ul>
       </nav>
@@ -28,7 +28,7 @@
             </a>
           </div>
           <div class="card column is-6 animCard noShadow">
-            <a href="under-construction">
+            <router-link to="/under"><a>
               <div class="absolute px-3">
                 <div class="cardTxtCustom txtSlide has-text-centered is-vcentered">
                   <h2 class="has-text-weight-bold is-family-secondary">StephiPlace</h2>
@@ -42,7 +42,7 @@
                   <img src="../assets/img/stephiplace.jpg" alt="page d'acceuil stephiplace">
                 </figure>
               </div>
-            </a>
+            </a></router-link>
           </div>
         </div>
         <!--<div class="container columns noShadow">
@@ -84,24 +84,24 @@
       </div>
       <div class="hero-foot columns">
         <div class="left desktop column">
-          <a href="/" class="marginLinks">
+          <router-link to="/"><a class="marginLinks">
             <div>
               <p>About me</p>
             </div>
             <div class="left">
               <i class="fas fa-chevron-left animArrowLeft"></i>
             </div>
-          </a>
+          </a></router-link>
         </div>
         <div class="right desktop column">
-          <a href="skills" class="marginLinks">
+          <router-link to="/skills"><a class="marginLinks">
             <div>
               <p>My Skills</p>
             </div>
             <div class="right">
               <i class="fas fa-chevron-right animArrowRight"></i>
             </div>
-          </a>
+          </a></router-link>
         </div>
       </div>
     </section>

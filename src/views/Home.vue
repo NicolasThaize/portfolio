@@ -5,21 +5,21 @@
         <div class="columns is-mobile is-marginless">
           <div class="column left">
             <figure class="image">
-              <a href="/"><img src="../assets/img/logo.png" style="width: 5rem;" alt="Logo"></a>
+              <router-link to="/"><a><img src="../assets/img/logo.png" style="width: 5rem;" alt="Logo"></a></router-link>
             </figure>
           </div>
           <div class="column center desktop has-text-weight-bold is-family-secondary navShow">
-            <a href="/" class="navbar-item has-text-black leftAnim">ABOUT ME</a>
+            <router-link to="/"><a class="navbar-item has-text-black leftAnim">ABOUT ME</a></router-link>
             <i class="fas fa-circle has-text-black" style="font-size: 0.3rem"></i>
-            <a href="pages/works" class="navbar-item has-text-black midAnim">MY WORKS</a>
+            <router-link to="/works"> <a class="navbar-item has-text-black midAnim">MY WORKS</a></router-link>
             <i class="fas fa-circle has-text-black" style="font-size: 0.3rem;"></i>
-            <a href="pages/skills" class="navbar-item has-text-black rightAnim">MY SKILLS</a>
+            <router-link to="/skills"><a class="navbar-item has-text-black rightAnim">MY SKILLS</a></router-link>
           </div>
           <div class="column right">
             <div class="right desktop navShow">
-              <a class="navbar-item" style="color: rgb(33,33,33);" href="pages/contact">Contact</a>
+              <router-link to="/contact"><a class="navbar-item" style="color: rgb(33,33,33);">Contact</a></router-link>
               <a class="navbar-item" style="color: rgb(33,33,33);"
-                 href="https://www.linkedin.com/in/nicolas-thaize-130912193" target="_blank">LinkedIn</a>
+                 href="https://www.linkedin.com/in/nicolas-thaize" target="_blank">LinkedIn</a>
             </div>
 
             <a
@@ -38,19 +38,19 @@
         <div class="column center">
           <ul class="alignText">
             <li>
-              <a href="/" class="navbar-item has-text-white has-text-weight-bold">ABOUT ME</a>
+              <router-link to="/"><a class="navbar-item has-text-white has-text-weight-bold">ABOUT ME</a></router-link>
             </li>
             <div class="divider"></div>
             <li>
-              <a href="pages/works" class="navbar-item has-text-white has-text-weight-bold">MY WORKS</a>
+              <router-link to="/works"><a class="navbar-item has-text-white has-text-weight-bold">MY WORKS</a></router-link>
             </li>
             <div class="divider"></div>
             <li>
-              <a href="pages/skills" class="navbar-item has-text-white has-text-weight-bold">MY SKILLS</a>
+              <router-link to="/skills"><a class="navbar-item has-text-white has-text-weight-bold">MY SKILLS</a></router-link>
             </li>
             <div class="divider"></div>
             <li class="column">
-              <a href="pages/contact" class="has-text-white">Contact</a>
+              <router-link to="/contact"><a class="has-text-white">Contact</a></router-link>
               <a href="https://www.linkedin.com/in/nicolas-thaize-130912193"
                  class="navbar-item has-text-white" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </li>
@@ -77,7 +77,8 @@
         </div>
         <div class="center column"></div>
         <div class="right desktop column">
-          <a href="pages/works" class="marginLinks">
+          <router-link to="/works">
+          <a class="marginLinks">
             <div>
               <p>My Works</p>
             </div>
@@ -85,6 +86,7 @@
               <i class="fas fa-chevron-right animArrowRight"></i>
             </div>
           </a>
+          </router-link>
         </div>
       </div>
     </section>

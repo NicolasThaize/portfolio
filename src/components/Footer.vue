@@ -7,8 +7,8 @@
             <p>Designed & Developped by © 2020 Nicolas THAIZE.</p>
           </div>
           <div class="column center">
-            <a class="navbar-item" href="terms">Terms</a>
-            <a class="navbar-item" href="contact">Contact</a>
+            <router-link to="/terms"><a class="navbar-item">Terms</a></router-link>
+            <router-link to="/contact"><a class="navbar-item">Contact</a></router-link>
           </div>
         </div>
       </div>
